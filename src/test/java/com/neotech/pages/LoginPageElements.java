@@ -21,7 +21,7 @@ public class LoginPageElements extends CommonMethods {
 	@FindBy(id = "txtPassword-error")
 	public WebElement passError;
 
-	@FindBy(id = "//div[@class='toast-message']")
+	@FindBy(xpath = "//div[@class='toast-message']")
 	public WebElement invalidCredMsg;
 
 	public LoginPageElements() {
