@@ -33,7 +33,7 @@ public class LoginSteps extends CommonMethods {
 
 	@Then("I validate I am logged in")
 	public void i_validate_i_am_logged_in() {
-		// if
+
 		// need dashboard element for user
 		String actual = driver.findElement(By.id("account-name")).getText();
 		String expected = "Jacqueline White";
@@ -58,9 +58,9 @@ public class LoginSteps extends CommonMethods {
 
 	@Then("I validate invalid credentials")
 	public void i_validate_invalid_credentials() {
-		// wait
-		String actual = loginPage.invalidCredMsg.getText();
+		
 		String expected = "Invalid Credentials";
+		String actual = loginPage.invalidCredMsg.getText();
 		if (actual.equals(expected)) {
 			System.out.println("Successfully displaying invalid credentials method");
 		} else {
