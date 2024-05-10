@@ -8,7 +8,7 @@ import com.neotech.utils.CommonMethods;
 import com.neotech.utils.ConfigsReader;
 
 public class LoginPageElements extends CommonMethods {
-	
+
 	@FindBy(id = "txtUsername")
 	public WebElement username;
 
@@ -23,12 +23,12 @@ public class LoginPageElements extends CommonMethods {
 
 	@FindBy(id = "//div[@class='toast-message']")
 	public WebElement invalidCredMsg;
-	
+
 	public LoginPageElements() {
-		
+
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void adminLogin() {
 		sendText(username, ConfigsReader.getProperty("username"));
 		sendText(password, ConfigsReader.getProperty("password"));

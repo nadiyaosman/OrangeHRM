@@ -17,7 +17,7 @@ import com.neotech.pages.ReportToPageElements;
 import com.neotech.pages.SocialMediaDetailsPageElements;
 import com.neotech.pages.WorkWeekPageElements;
 
-public class PageInitializer  {
+public class PageInitializer extends BaseClass{
 	
 	public static AddDisciplinaryCasePageElements addDisciplinaryPage;
 	public static AddEmployeePageElements addEmployeePage;
