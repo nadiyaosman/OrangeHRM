@@ -2,6 +2,7 @@
 @login
 Feature: Login to HRM
 
+
   @smoke @regression
   Scenario: Valid Login
     Given I navigated to the HRM website
