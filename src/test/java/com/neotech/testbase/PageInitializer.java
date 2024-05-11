@@ -60,21 +60,6 @@ public class PageInitializer extends BaseClass{
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 	
