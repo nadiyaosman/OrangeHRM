@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		
 		//This is where feature files are stored
-		features = "src/test/resources/features",
+		features = "src/test/resources/features/",
 		
 		
 		//This is the package where we put our test steps for feature files 
@@ -23,10 +23,12 @@ import io.cucumber.junit.CucumberOptions;
 		monochrome = true,
 		
 		//We specify which group of scnearios we want to execute
-		tags = "",
+		tags = "@regression",
 		
 		
 		plugin = {
+				//prints gherkin steps into the console in pretty format
+				"pretty",
 				
 				// This plugin generates a basic html file and saves it in the target folder
 				"html:target/cucumber-default-report.html",
@@ -36,7 +38,6 @@ import io.cucumber.junit.CucumberOptions;
 				
 				
 		}
-		
 		
 		
 		
