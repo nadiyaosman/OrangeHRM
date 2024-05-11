@@ -34,18 +34,9 @@ import io.cucumber.junit.CucumberOptions;
 				"html:target/cucumber-default-report.html",
 				
 				//Generates a json file and store it in target folder
-				"json:target/cucumber.json"
-				
-				
+
+				"json:target/cucumber.json"		
 		}
-		
-		
-		
-)
-
-
-
-
 public class TestRunner {
 
 }
