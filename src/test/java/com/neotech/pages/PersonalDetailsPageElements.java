@@ -10,6 +10,7 @@ import com.neotech.testbase.BaseClass;
 import com.neotech.utils.CommonMethods;
 
 public class PersonalDetailsPageElements extends CommonMethods {
+	
 	@FindBy(id = "txtUsername")
 	public WebElement username;
 
@@ -139,7 +140,7 @@ public class PersonalDetailsPageElements extends CommonMethods {
 	
 	
 	public PersonalDetailsPageElements() {
-		PageFactory.initElements(BaseClass.driver, this);
+		PageFactory.initElements(driver, this);
 	}
 
 }

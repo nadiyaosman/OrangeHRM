@@ -18,12 +18,12 @@ import io.cucumber.junit.CucumberOptions;
 		
 		//if dryRun is true and we run the TestRunner, it will show us unimplemented steps in the console
 		//Then we can copy the unimplemented methods and paste them in steps	
-		dryRun = false,
+		dryRun = true,
 		
 		monochrome = true,
 		
 		//We specify which group of scnearios we want to execute
-		tags = "@ExcelData",
+		tags = "",
 		
 		
 		plugin = {
