@@ -1,4 +1,4 @@
-@Qualification
+@Qualifications
 Feature: Edit Qualifications Details
 
   As an admin
