@@ -35,6 +35,7 @@ public class PageInitializer extends BaseClass{
 	public static ReportToPageElements reportToPage;
 	public static SocialMediaDetailsPageElements socialMediaDetailsPage;
 	public static WorkWeekPageElements workWeekPage;
+
 	
 	
 	public static void initialize() {

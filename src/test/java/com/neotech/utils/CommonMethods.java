@@ -23,6 +23,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.neotech.testbase.PageInitializer;
 
 public class CommonMethods extends PageInitializer {
+	
+	/**
+	 * This method helps to count the elements in the list of calendars & data tables 
+	 * 
+	 * @param element
+	 * @param text
+	 */
+	public static void clickOnElement(List<WebElement> list, String option) {
+		wait(1);
+		for (WebElement el : list) {
+			
+			String text = el.getText();
+			if (text.equals(option)) {
+				click(el);
+				break;
+			}
+		}
+	}
 
 	/**
 	 * This method clears a text box and sets its text
