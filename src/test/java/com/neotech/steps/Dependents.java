@@ -103,11 +103,22 @@ public class Dependents extends CommonMethods {
 	}
 	@Then("I select Date of Birth {string}")
 	public void i_select_date_of_birth(String BirthDate) {
-	
-		sendText(dependentsPage.BirthDate, "05-09-2007");
-		sendText(dependentsPage.BirthDate, "01-07-2010");
 		
-		wait(2);
+		String [] arr = BirthDate.split("-");
+		String year = arr[0];
+		int month = Integer.parseInt(arr[1]);
+		int day = Integer.parseInt(arr[2]);
+		
+		wait(1);
+		click(dependentsPage.YearButton);
+		
+		clickOnElement(dependentsPage.yearOptions,year);
+		click(dependentsPage.MonthButton);
+		click(dependentsPage.MonthOptions.get(month-1));
+
+		selectCalendarDate(dependentsPage.DayOptions, day + " ");
+		
+		wait(3);
 		
 	}	
 	@Then("I click Save")

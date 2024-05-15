@@ -52,6 +52,21 @@ public class DependentsPageElements extends CommonMethods {
 	@FindBy(xpath="//input[@id='date_of_birth']/following-sibling::div/div/button")
 	public WebElement Calendar;
 	
+	@FindBy(xpath="//select[@class='picker__select--year selectpicker initialized']/following-sibling::button")
+	public WebElement YearButton;
+	
+	@FindBy(id = "//div[@class='dropdown bootstrap-select picker__select--year show']//li")
+	public List<WebElement> yearOptions;
+	
+	@FindBy(xpath="//div[@class='dropdown bootstrap-select picker__select--month']//button")
+	public WebElement MonthButton;
+	
+	@FindBy(xpath= "//div[@class='dropdown bootstrap-select picker__select--month show']//li")
+	public List<WebElement> MonthOptions;
+	
+	@FindBy(xpath = "//label[@for='date_of_birth']/following-sibling::div//td")
+	public List<WebElement> DayOptions;
+	
 	@FindBy(xpath="//input[@id='date_of_birth']")
 	public WebElement BirthDate;
 	

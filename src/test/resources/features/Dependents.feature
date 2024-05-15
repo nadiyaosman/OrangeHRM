@@ -21,5 +21,5 @@ Feature: Adding Two Dependents With Personal Details
 
     Examples: 
       | FirstName | LastName | Relationship | BirthDate  |
-      | Corazon   | Aquino   | Child        | 05-09-2007 |
-      | Filippo   | Inzaghi  | Child        | 01-07-2010 |
+      | Corazon   | Aquino   | Child        | 2007-05-09 |
+      | Filippo   | Inzaghi  | Child        | 2010-01-07 |
