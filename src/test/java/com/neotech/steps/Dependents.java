@@ -111,11 +111,9 @@ public class Dependents extends CommonMethods {
 		
 		wait(1);
 		click(dependentsPage.YearButton);
-		
 		clickOnElement(dependentsPage.yearOptions,year);
 		click(dependentsPage.MonthButton);
 		click(dependentsPage.MonthOptions.get(month-1));
-
 		selectCalendarDate(dependentsPage.DayOptions, day + " ");
 		
 		wait(3);

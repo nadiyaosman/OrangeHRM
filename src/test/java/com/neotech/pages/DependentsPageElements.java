@@ -22,9 +22,6 @@ public class DependentsPageElements extends CommonMethods {
 	@FindBy(xpath="//span[normalize-space()='Employee List']")
 	public WebElement EmployeeList;
 	
-	//@FindBy(xpath="//*[@id='employeeListTable']/tbody/tr[1]/td[3]")
-	//public WebElement SelectEmp;
-	
 	@FindBy(xpath="//table[@id='employeeListTable']/tbody//td[2]")
 	public List<WebElement> SelectEmp;
 	

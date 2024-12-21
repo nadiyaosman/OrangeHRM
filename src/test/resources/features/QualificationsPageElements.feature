@@ -23,4 +23,4 @@ Feature: Edit Qualifications Details
     Then I should see the modal titled "Work Experience"
 
     When I fill in the following fields in the "Work Experience" modal:
-      | Field         | Val
+     
